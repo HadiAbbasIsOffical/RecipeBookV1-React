@@ -1,0 +1,61 @@
+.AboutUsPage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Arrange child divs in 3 columns */
+
+}
+.AboutUs{
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.467); /* Adding a bit of shadow */
+    padding: 20px;
+    width: 1fr; /* Adjust width as needed */
+    animation:AppearIn 2s ease-in-out
+
+  }
+  @keyframes AppearIn {
+    0% {
+        opacity: 0%;/* Start off-screen */
+    }
+    100% {
+        opacity: 100%; /* Move to the desired position */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .AboutUsPage {
+        grid-template-columns: 1fr;
+    }
+}
+.centered-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 10vh; /* Set height to full viewport height */
+    margin-bottom: 20px;
+    
+}
+
+.centered-heading {
+    width: 600px;
+    
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center; /* Center text within the heading */
+    animation:fadeIn 2s ease-in-out
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-50px); /* Start off-screen */
+    }
+    100% {
+        transform: translateY(0); /* Move to the desired position */
+    }
+  }
+.Github_io:hover{
+    opacity: 0.8;
+    transition: 0.8s ease;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
