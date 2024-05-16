@@ -4,7 +4,7 @@
 
 Welcome to the FoodRecipe application! This project is an interactive and user-friendly web application designed to help culinary enthusiasts discover and bookmark their favorite recipes. Built with React and styled using Tailwind CSS, the application fetches data from the Forkify API to display a diverse range of recipes, complete with images and detailed preparation instructions.
 
-![FoodRecipe Screenshot](path/to/screenshot.png)
+![FoodRecipe Screenshot](public/Preview.PNG)
 
 ## Features
 
