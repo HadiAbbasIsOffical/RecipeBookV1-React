@@ -33,10 +33,10 @@ export default function Navbar() {
             </form>
             <ul className="flex gap-5">
                 <li>
-                    <NavLink to={'/'} className='text-black hover:text-gray-700 duration-300' style={{fontWeight:'500'}}>Homepage</NavLink>
+                    <NavLink to={'/RecipeBookV1-React'} className='text-black hover:text-gray-700 duration-300' style={{fontWeight:'500'}}>Homepage</NavLink>
                 </li>
                 <li>
-                    <NavLink to={'/Favouriate'} className='text-black hover:text-gray-700 duration-300' style={{fontWeight:'500'}}>Favorites</NavLink>
+                    <NavLink to={'/RecipeBookV1-React/Favouriate'} className='text-black hover:text-gray-700 duration-300' style={{fontWeight:'500'}}>Favorites</NavLink>
                 </li>
                 {/* <li>
                     <NavLink to={'/About'} className='text-black hover:text-gray-700 duration-300' style={{fontWeight:'500'}}>About</NavLink>

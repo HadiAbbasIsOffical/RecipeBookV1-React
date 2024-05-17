@@ -40,7 +40,7 @@ export default function ExtractContent({ children }) {
       
                 Setcontent(data.data.recipes)
                 // history.push('/');
-                navigate('/Recipe');
+                navigate('/RecipeBookV1-React/recipe');
 
             }
             

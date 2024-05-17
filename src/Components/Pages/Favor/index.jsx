@@ -54,7 +54,7 @@ export default function Favoriate() {
                                         </h1>
                                         <img src={each_data.image_url} className='item.image_url' style={{ width: '70px' }}></img>
                                         <Link
-                                            to={`/Recipe-item/${each_data.id}`}
+                                            to={`/RecipeBookV1-React/Recipe-item/${each_data.id}`}
                                             style={{ fontWeight: 'bolder', }}
                                             className="Link_toMore">
                                             View

@@ -25,17 +25,17 @@ function App() {
             element={<About />} 
           />
           <Route
-            path='/Recipe'
+            path='/RecipeBookV1-React/recipe'
             element={<Homepage />}
 
   />
           <Route
-            path='/Favouriate'
+            path='/RecipeBookV1-React/Favouriate'
             element={
               <Favoriate />
             } />
           <Route
-            path='/Recipe-item/:id'
+            path='/RecipeBookV1-React/Recipe-item/:id'
             element={
               <Details />
             } />

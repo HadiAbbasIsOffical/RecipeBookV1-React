@@ -21,7 +21,7 @@ export default function Homepage() {
                         <p className="title_of" key={item.id}>{item.title}</p>
                         <img src={item.image_url} className="img_of"></img>
                         <Link
-                        to={`/Recipe-item/${item.id}`}
+                        to={`/RecipeBookV1-React/Recipe-item/${item.id}`}
                         style={{fontWeight:'bolder',}}
                         className="Link_toMore">
                         Read more
