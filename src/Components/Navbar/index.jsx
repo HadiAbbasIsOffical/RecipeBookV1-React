@@ -10,8 +10,8 @@ export default function Navbar() {
     const { Search_params, Set_params, handleSubmit } = useContext(GlobalContext)
 
     return (<>
-        <nav className="flex j ustify-between items-center py-8 container mx-auto flex-col lg:flex-row gap-5 lg:gap-0" >
-            <Link to={'/'}>
+        <nav className="flex justify-between items-center py-8 container mx-auto flex-col lg:flex-row gap-5 lg:gap-0" >
+            <Link to={'/RecipeBookV1-React'}>
                  <div className="title_page"> 
            
             <h2 className="text-2x1 font-extrabold">FoodRecipe</h2>
