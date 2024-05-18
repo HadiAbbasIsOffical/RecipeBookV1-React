@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Homepage from './Components/Pages/Homepage/index'
 import Navbar from './Components/Navbar/index'
 import About from './Components/Pages/About/index'
-// import Utilities from './Components/Pages/Utilities/index'
 import Favoriate from './Components/Pages/Favor';
 import Details from './Components/Pages/Details';
 import {

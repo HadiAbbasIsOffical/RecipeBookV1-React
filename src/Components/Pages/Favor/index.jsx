@@ -37,10 +37,10 @@ export default function Favoriate() {
         ShowAllFavoriate()
     }, [])
     return (
-        <div>
-            <div className='AllItems'>
+        <div className='grid md:grid-cols-2 '>
 
                 {All_datas && All_datas.length ?
+            <div className='AllItems'>
 
                     <ul>
                         {
@@ -50,9 +50,12 @@ export default function Favoriate() {
                                 <div className='ItemToEach' >
 
                                     <li>
-                                        <h1 style={{ fontWeight: 'bolder' }}>  {each_data.title}
+                                        <h1 style={{ fontWeight: 'bolder' ,margin:'7px'}} className='text-2xl'>  {each_data.title}
                                         </h1>
-                                        <img src={each_data.image_url} className='item.image_url' style={{ width: '70px' }}></img>
+                                        <img src={each_data.image_url} className='
+                                        w-[300px] h-[150px] img_of mr-4 object-fill
+                                        
+                                        ' ></img>
                                         <Link
                                             to={`/RecipeBookV1-React/Recipe-item/${each_data.id}`}
                                             style={{ fontWeight: 'bolder', }}
@@ -65,20 +68,32 @@ export default function Favoriate() {
                             )
 
                         }
-
                     </ul>
+                    </div>
+
                     : reverseother == true ? <div className='NoFavDiv'>
                         <h1 className='Nofavoried'>Loading.. </h1></div> :
-                        <div className='NoFavDiv'>
-                            <h1 className='Nofavoried'>You dont have any favorite's yet! :( </h1></div>}
-                            <img
+                        <div className='NoFavDiv md:w-auto w-[250px] '>
+                            <h1 className='Nofavoried
+                            md:text-3xl
+                            text-2xl
+                            font-bold
+                            m-2
+                            md:ml-0
+                            ml-5'>You dont have any favorite's yet! :( </h1>
+                            </div>
+                            }
+                       <div>     <img
         src='https://www.logopik.com/public/storage/product/tue-sep-13-2022-717-am80029.png'
-        className='chef_pic_real' >
+        className='chef_pic_real 
+     sm:block
+     hidden
+md:w-[500px] w-[200px]' >
           
-        </img>
+        </img></div>
             </div>
         
 
-        </div>
+      
     )
 }

@@ -62,17 +62,24 @@ export default function ImageSlider({ url = 'https://forkify-api.herokuapp.com/a
 
 
     return (
-        <div className="container2">
+        <div className="container2
+        max-h-[500px] max-w-[600px]
+        md:w-[600px] md:h-[600px]
+        mb-10
+         flex">
 
 
             <BsArrowLeftCircleFill className="arrow arrow-left" onClick={MoveLeftFunc} />
             {
                 image && image.length ?
                     image.map((imageItem, index) =>
+                        imageItem?
                         <img
                             src={imageItem.image_url}
-                            style={{ height: 'auto', maxHeight: '400px' }}
-                            className={index === CurrentSlide ? "image_display" : "ForNone"}></img>) : null}
+                            
+                            style=
+                            {{ height: 'auto', maxHeight: '400px' }}
+                            className={index === CurrentSlide ? "image_display" : "ForNone"}></img>:null) : null}
 
             <BsArrowRightCircleFill className="arrow arrow-right" onClick={MoveRightFunc} />
             <span className="circle-indicators">

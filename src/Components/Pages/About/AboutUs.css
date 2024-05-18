@@ -4,12 +4,11 @@
 
 }
 .AboutUs{
-    margin: 15px;
+    /* margin: 15px; */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.467); /* Adding a bit of shadow */
-    padding: 20px;
-    width: 1fr; /* Adjust width as needed */
+    /* padding: 10px; */
     animation:AppearIn 2s ease-in-out
 
   }
@@ -31,7 +30,7 @@
     display: flex; /* Use flexbox */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-    height: 10vh; /* Set height to full viewport height */
+    height: 12vh; /* Set height to full viewport height */
     margin-bottom: 20px;
     
 }
@@ -39,7 +38,6 @@
 .centered-heading {
     width: 600px;
     
-    font-size: 70px;
     font-weight: bolder;
     text-align: center; /* Center text within the heading */
     animation:fadeIn 2s ease-in-out

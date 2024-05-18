@@ -14,11 +14,9 @@ export default function Details({ }) {
     const [loading, Setloading] = useState(false)
     const [errorMsg, SetErrormsg] = useState(false)
 
-    //for displaying msg
     const [SuccessMsg, SetSuccess] = useState(false)
     const [Failmsg, SetFail] = useState(false)
-    //
-    // console.log(id)
+   
     const { RecipeDetails, SetRecipeDetails, AddFavItem, FavItems } = useContext(GlobalContext)
     useEffect(() => {
         if (FavItems.includes(id)) {
@@ -29,8 +27,7 @@ export default function Details({ }) {
                 Setloading(true)
                 const initialdata = await fetch(`https://forkify-api.herokuapp.com/api/v2/recipes/${id}`)
                 const datafinal = await initialdata.json()
-                // console.log(datafinal)
-                // console.log(datafinal.data.recipe.ingredients)
+
                 if (datafinal) {
                     Setloading(false)
                 }
@@ -96,20 +93,16 @@ export default function Details({ }) {
             SetFail(false)
         }, 2000);
     }
-    // if(SuccessMsg==true){
-    //     <SuccessFav NameId={ActualRecipe.title}/>
-    //     console.log('123')
 
-    // }
     return (
-        <div className='AllItems'>
-
+        <div className='grid md:grid-cols-3 grid-rows-[auto,auto,1fr]'>
+                <div>
             {ActualRecipe ? <div>
-                <img className='img_of'
+                <img className='w-[100%] h-[250px] img_of mr-4'
                     src={ActualRecipe.image_url}></img>
                 <h1 style={{ fontWeight: 'bolder' }}>{ActualRecipe.title} by {ActualRecipe.publisher}</h1>
-            </div> : null}
-            {
+            </div> : null}</div>
+           <div className='md:ml-4 md:my-0 my-3'> {
 
                 AllItems && AllItems.length ?
                     <div>
@@ -122,9 +115,9 @@ export default function Details({ }) {
                             }
                         </ol>
                     </div> : null
-            }
-            <button onClick={AddingTofav} className={favoried == true ? 'favorButton2' : 'favorButton'} >{favoried == true ?'Remove Favorite':'Add to Favorite'}</button>
-
+            }</div>
+          <div> <button onClick={AddingTofav} className={favoried == true ? 'favorButton2' : 'favorButton'} >{favoried == true ?'Remove Favorite':'Add to Favorite'}</button>
+          </div> 
             {
                 SuccessMsg == true ? <SuccessFav NameId={ActualRecipe.title} /> : null
             }

@@ -1,13 +1,13 @@
 .container2 {
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 500px;
+    /* width: 600px;
+    height: 500px; */
 }
 .arrow-left {
     left: 1rem;
+    z-index:10 ;
 }
 .arrow {
     position: absolute;
@@ -21,7 +21,7 @@
 }
 .image_display {
     /* width: 100px; */
-    width: auto;
+
     border-radius: 0.5rem;
     box-shadow: 0px 0px 7px #666;
     width: 100%;
@@ -30,6 +30,13 @@
     animation: fadeIn 0.9s ease-in-out forwards; /* Apply slide-in animation */
 
 }
+@media (max-width: 640px) { /* Apply styles for sm devices only */
+    .image_display {
+        width: 640px; /* Set width to 640px on sm devices */
+        height: 300px; /* Set height to 300px on sm devices */
+    }
+}
+
 @keyframes fadeIn {
     0% {
         transform: translateX(-50px); /* Start off-screen */

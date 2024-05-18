@@ -5,26 +5,35 @@ import { FaGithub } from "react-icons/fa";
 export default function About() {
 
     return (
-        <>
+        <div className="overflow-x-hidden">
             <div className="centered-container">
-                <h1 className="centered-heading">Hello Chef!</h1>
+                <h1 className="centered-heading md:text-6xl text-4xl">Hello Chef!</h1>
             </div>        <div className="AboutUsPage">
 
-                <div>
+                <div className="flex flex-grow ">
                     <ImageSlider />
                 </div>
 
-                <div className="AboutUs">
-                    <h1 style={{ fontSize: '50px', fontWeight: 'bolder' }}>About us</h1>
-                    <p style={{ marginTop: '30px' }}>
+                <div className="AboutUs md:m-4 md:p-0 
+                 lg:w-full sm:w-full w-[320px] md:w-[300px]
+                sm:mb-3 
+           flex flex-1 flex-col
+               ">
+                    <h1 style={{ fontSize: '50px', fontWeight: 'bolder',margin:'10px' }}>About us</h1>
+                   <div className="flex"> <p style={{ marginTop:'30px',margin:'15px' }} className="text-wrap">
                         We are a small group dedicated to assisting everyone in preparing delicious meals! Our website is designed to provide guidance on seasoning and spice quantities, ensuring your dishes turn out perfectly every time. Are you ready, chefs?</p>
-                    <h2 style={{
+                        </div>
+                        
+                        <h2 style={{
                         marginTop: '20px',
+                        marginLeft:'10px',
                         fontWeight: 'bolder'
                     }}>Made by HadiAbbas</h2>
                     <div className="Credits_profile"
                     style={{display:'flex',alignItems:'center'}}>
                     <h2 style={{
+                                                marginLeft:'10px',
+
                         marginTop: '20px',
                         fontWeight: 'bolder'
                     }}>Github:</h2>
@@ -35,6 +44,6 @@ export default function About() {
                     </a></div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

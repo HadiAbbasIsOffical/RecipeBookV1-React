@@ -1,73 +1,42 @@
 .ItemToEach {
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Transparent border with a bit of shadow */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Add padding around each div */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a bit of shadow */
-    overflow: hidden; /* Ensure that the border doesn't affect the overall width and height */
-    animation: fadeIn 0.9s ease-in-out forwards; /* Apply slide-in animation */
-
-}
-.ItemToEach2{
-
-  width: calc(33.33% - 20px); /* Each item takes up 33.33% width with 20px margin */
-  margin-right: 20px; /* Margin between items */
-  margin-bottom: 20px; /* Margin at the bottom of each row */
-  box-sizing: border-box; /* Include padding and border in the width */
-
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    animation: fadeIn 0.9s ease-in-out forwards; 
 }
 .eachitem_{
-    animation: fadeIn 0.9s ease-in-out forwards; /* Apply slide-in animation */
-
+    animation: fadeIn 0.9s ease-in-out forwards; 
 }
 .ItemsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    /* Optionally, you can add padding, margin, etc. to ItemsContainer */
   }
-.AllItems {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Arrange child divs in 3 columns */
-    gap: 20px; /* Add gap between child divs */
-
-}
-
 
 .img_of {
-    width: 100%; /* Make the image take up the full width of its container */
-    height: 250px; /* Set a fixed height for all images */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-}
-
-.title_of {
-    font-weight: bolder;
-    margin-top: 10px; /* Add a bit of distance between image and title */
-    text-align: center; /* Center the title */
+    object-fit: cover; 
 }
 .Link_toMore {
     display: inline-block;
    margin-top: 5px;
-    padding: 10px 20px; /* Adjust padding as needed */
-    background-color: #4CAF50; /* Greenish color */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove default underline */
-    border-radius: 20px; /* Rounded corners */
-    transition: opacity 0.3s; /* Smooth transition for hover effect */
+    padding:6px;
+    background-color: #4CAF50;
+    color: white; 
+    text-decoration: none; 
+    border-radius: 20px; 
+    transition: opacity 0.3s; 
 }
-
 .Link_toMore:hover {
-    opacity: 0.8; /* Reduce opacity on hover */
+    opacity: 0.8; 
 }
-
 .favorButton{
     display: inline-block;
     width: 100px;
     height: 70px;
-    background-color: #63c666; /* Greenish color */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove default underline */
-    border-radius: 20px; /* Rounded corners */
-    transition: opacity 0.3s; /* Smooth transition for hover effect */
+    background-color: #63c666; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 20px; 
+    transition: opacity 0.3s; 
 }
 .favorButton:hover{
     opacity: 0.8;
@@ -77,20 +46,15 @@
     display: inline-block;
     width: 100px;
     height: 70px;
-    background-color: #b93740; /* Greenish color */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove default underline */
-    border-radius: 20px; /* Rounded corners */
-    transition: opacity 0.3s; /* Smooth transition for hover effect */
-
+    background-color: #b93740; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 20px; 
+    transition: opacity 0.3s; 
 }
-
 .Nofavoried{
-    font-weight: bolder;
-    font-size: xx-large;
-    animation:AppearIn 2s ease-in-out
-
-
+    animation:AppearIn 2s ease-in-out;
+    
 }
 .ErrorMsg{
     font-weight: bolder;
@@ -119,51 +83,51 @@
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #4caf50; /* Greenish color */
+    background-color: #4caf50; 
     color: white;
-    border: 2px solid #388e3c; /* Darker green border */
+    border: 2px solid #388e3c;
     padding: 10px 20px;
     border-radius: 5px;
-    z-index: 999; /* Ensure it appears above other elements */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
-    animation: fadeIn 0.6s ease-in-out forwards; /* Apply slide-in animation */
+    z-index: 999;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out forwards; 
 
 }
 .FavItemRemove{
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #c72e2e; /* Greenish color */
+    background-color: #c72e2e; 
     color: white;
-    border: 2px solid #c90c29; /* Darker green border */
+    border: 2px solid #c90c29;
     padding: 10px 20px;
     border-radius: 5px;
-    z-index: 999; /* Ensure it appears above other elements */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
-    animation: fadeIn 0.6s ease-in-out forwards; /* Apply slide-in animation */
+    z-index: 999; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    animation: fadeIn 0.6s ease-in-out forwards; 
 }
 @keyframes fadeIn {
     0% {
-        transform: translateY(-50px); /* Start off-screen */
+        transform: translateY(-50px); 
     }
     100% {
-        transform: translateY(0); /* Move to the desired position */
+        transform: translateY(0);
     }
   }
   
 .chef_pic_real{
     object-fit: cover;
-    width: 100px;
     animation:AppearIn 2s ease-in-out;
-
+    margin: 10px;
     width: 500px;
 }
+
 @keyframes AppearIn {
     0% {
-        opacity: 0%;/* Start off-screen */
+        opacity: 0%;
     }
     100% {
-        opacity: 100%; /* Move to the desired position */
+        opacity: 100%; 
     }
   }
 
